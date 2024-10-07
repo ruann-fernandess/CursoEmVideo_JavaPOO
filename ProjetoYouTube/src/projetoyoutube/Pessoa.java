@@ -51,7 +51,7 @@ public abstract class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", xp=" + xp + '}';
+        return "PESSOA" + "\nnome: " + nome + "\nidade: " + idade + "\nsexo: " + sexo + "\nxp: " + xp;
     }
     
     

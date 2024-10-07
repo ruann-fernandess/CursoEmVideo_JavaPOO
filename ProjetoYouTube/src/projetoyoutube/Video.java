@@ -40,7 +40,9 @@ public class Video implements AcoesVideo {
     }
 
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        int nova;
+        nova = (this.avaliacao + avaliacao)/this.views;
+        this.avaliacao = nova;
     }
 
     public int getViews() {
@@ -69,7 +71,7 @@ public class Video implements AcoesVideo {
 
     @Override
     public String toString() {
-        return " Titulo: " + titulo 
+        return "Titulo: " + titulo 
              + "\n Avaliacao: " + avaliacao 
              + "\n Views: " + views 
              + "\n Curtidas: " + curtidas 
